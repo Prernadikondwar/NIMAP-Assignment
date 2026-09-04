@@ -1,0 +1,252 @@
+{
+	"info": {
+		"_postman_id": "3e6ed6a2-bcf3-4ac9-b8a1-7e86c13d8604",
+		"name": "NIMAP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "57959459",
+		"_collection_link": "https://prernamca21-1274339.postman.co/workspace/prernamca21's-Workspace~f483893d-28ed-4231-83b1-b9ba4d1baddf/collection/57959459-3e6ed6a2-bcf3-4ac9-b8a1-7e86c13d8604?action=share&source=collection_link&creator=57959459"
+	},
+	"item": [
+		{
+			"name": "Valid Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://test.fieldforceconnect.com"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://test.fieldforceconnect.com/auth/login"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"152\", \"Not?A_Brand\";v=\"24\", \"Google Chrome\";v=\"152\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"prernamca21@gmail.com\",\"password\":\"Prernasuraj\"}"
+				},
+				"url": {
+					"raw": "https://test.fieldforceconnect.com/api/account/authenticate",
+					"protocol": "https",
+					"host": [
+						"test",
+						"fieldforceconnect",
+						"com"
+					],
+					"path": [
+						"api",
+						"account",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Invalid Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://test.fieldforceconnect.com"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://test.fieldforceconnect.com/auth/login"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"152\", \"Not?A_Brand\";v=\"24\", \"Google Chrome\";v=\"152\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"wrongprerna@gmail.com\",\"password\":\"Prernasuraj\"}"
+				},
+				"url": {
+					"raw": "https://test.fieldforceconnect.com/api/account/authenticate",
+					"protocol": "https",
+					"host": [
+						"test",
+						"fieldforceconnect",
+						"com"
+					],
+					"path": [
+						"api",
+						"account",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CUSTOMER ADDING",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "authorization",
+						"value": "Basic cHJlcm5hbWNhMjFAZ21haWwuY29tOlByZXJuYXN1cmFq"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://test.fieldforceconnect.com"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://test.fieldforceconnect.com/customers"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"152\", \"Not?A_Brand\";v=\"24\", \"Google Chrome\";v=\"152\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"CityId\":0,\"CountryId\":0,\"From\":1,\"LeadSourceIds\":\"\",\"LeadStageIds\":\"\",\"LeadTypeIds\":\"\",\"LocalityId\":\"\",\"StateId\":0,\"StatusIds\":\"\",\"TagIds\":\"\",\"TerritoryIds\":\"\",\"Text\":\"\",\"To\":30,\"UserIds\":\"\",\"ReferBy\":\"\",\"FromDate\":\"\",\"ToDate\":\"\",\"DateType\":\"ModifiedDate\",\"CreatedByUserIds\":\"\",\"LeadStatus\":null}"
+				},
+				"url": {
+					"raw": "https://test.fieldforceconnect.com/api/CRM/Leads",
+					"protocol": "https",
+					"host": [
+						"test",
+						"fieldforceconnect",
+						"com"
+					],
+					"path": [
+						"api",
+						"CRM",
+						"Leads"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
